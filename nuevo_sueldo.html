@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>nuevo_sueldo</title>
+</head>
+<body>
+
+    <script>
+let s,i,n,c;
+
+s=parseInt(prompt("Ingrese el sueldo incial"));
+c=parseInt(prompt("Ingrese la categoria: 1, 2, 3 o 4"));
+
+if(c==1){
+    i=s*0.15;
+    
+  }
+  else if(c==2){
+    i=s*0.10;
+  }
+  else if(c==3){
+    i=s*0.08;
+  }
+  else if(c==4){
+    i=s*0.07;
+  }
+  else {
+    alert(`Categoria invalida => `)
+   
+  }
+
+n=i+s;
+alert(`El sueldo anterior era =>  ${s}`)
+alert(`La categoria es =>  ${c}`)
+alert(`El nuevo sueldo es =>  ${n}`)
+	</script>
+</body>
+</html>
